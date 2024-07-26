@@ -22,12 +22,12 @@ class CartPage:
 
     def price_of_items(self):
         char = '₹'
-        total_products_price = 0
         prices_list = []
         pric_list = self.driver.find_elements(*CartPage.prices)
         for x in pric_list:
             prices_list.append(x.text)
-        new = [ele.replace(char, '') for ele in prices_list]
-        for x in range(0, len(new)):
-            total_products_price = total_products_price + int(x)
-        return new
+        new_list = [ele.replace(char, '') for ele in prices_list]
+        new_list1 = [ele.replace(',', '') for ele in new_list]
+        new_list2 = [int(i) for i in new_list1]
+        total_products_price = sum(new_list2)
+        return total_products_price

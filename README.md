@@ -4,11 +4,12 @@
 
 This project implements automated testing for the Flipkart e-commerce website using Selenium with pytest. The following test cases are covered:
 
-- *Mobile Testing:* Validates user searching the mobile and adding to cart and verifies in cart whether correct product is added or not
-- *Book Search Test:* Validates user searching the mobile and adding to cart and verifies in cart whether correct product is added or not
-- *Adopter Adding and Pincode Verification:* Validates user searching the adpoter from the cart page and addinf to cart
-- *Cart Operations Test:* Tests adding and removing products from the cart.
-- *Price Confirmation:* Simulates the checkout process and ensures it works correctly.
+- *Flipkart Home Page validation:* Validates the Flipkart main page
+- *Flipkart Login Page validation:* Validates the login page
+- *Mobile Page:* Search for mobile and validates, adding to cart page and validates in cart page
+- *Book Page:* Search for book and validates, adding to cart page and validates in cart page
+- *Adapter Page and Pincode Verification:* Validates user searching the adapter from the cart page and selects the adapter and verify with pincode and adding to cart
+- *Price Confirmation:* Validates the price of all the products in the cart page
 
 
 ## How to Clone the Repository

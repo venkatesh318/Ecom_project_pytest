@@ -11,15 +11,15 @@ from selenium.webdriver.common.by import By
 
 @pytest.fixture(scope="class")
 def setup(request):
-    option = webdriver.ChromeOptions()
-    option.add_experimental_option('detach', True)
-    driver = webdriver.Chrome(options=option)
+    # Below lines (15 and 16) keep the chrome drive open
+    # option = webdriver.ChromeOptions()
+    # option.add_experimental_option('detach', True)
+    # Selenium has the capability to interact with browser without giving the path,
+    # It will take care by webdriver maager
+    driver = webdriver.Chrome() #options=option
     driver.get("https://www.flipkart.com/")
     driver.maximize_window()
     driver.implicitly_wait(30)
-    request.cls.driver=driver
+    request.cls.driver = driver
 
-
-# def _capture_screenshot(name):
-#     driver.get_screenshot_as_file(name)
 
