@@ -16,7 +16,7 @@ This project implements automated testing for the Flipkart e-commerce website us
 
 To clone this repository, use the following command:
 ```
-git clone https://github.com/yourusername/flipkart-selenium-pytest.git
+git clone https://github.com/venkatesh318/Ecom_project_pytest.git
 ```
 
 ## Creation of Virtual Environment
